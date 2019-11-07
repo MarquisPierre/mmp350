@@ -9,26 +9,26 @@
 	column-gap: 0.5em;
 }
 
+#container.create {
+	grid-template-columns: auto;
+}
 
 #title {
 	grid-column: 2;
 	grid-row: 2;	
 }
-#title-create {
-	grid-column: 2;
-	grid-row: 2;	
-}
 
+#container.create #title, 
+#container.create #menu, 
+#container.create #main {
+	grid-column: 1 / span 1;
+}
 
 #menu {
 	grid-column: 1 / span 2;
 	grid-row: 1;
 }
 
-#menu-create {
-	grid-column: 1 / span 2;
-	grid-row: 1;
-}
 
 
 #login, #user-info {
@@ -37,12 +37,6 @@
 }
 
 #main {
-	grid-column: 2;
-	grid-row: 3 ;
-	
-}
-
-#main-create {
 	grid-column: 2;
 	grid-row: 3 ;
 	
