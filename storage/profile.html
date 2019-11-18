@@ -9,6 +9,7 @@
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -34,6 +35,7 @@
 		<div id="title">
 			<h1>MMP 350 Web App</h1>
 		</div>
+		
 		<div id="menu">
 			<ul>
 				<li><a href="about">About</a></li>
@@ -57,13 +59,20 @@
 		</div>
 		
 		<div id="main">
-			<img src="cat.jpg" alt="">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam atque dolorem excepturi officiis beatae, fugiat culpa non fuga maxime quos illo earum, quod blanditiis consequatur fugit dolores provident, aperiam aliquid!</p>
+			<img id = "profile-image">
+			<input id="profile-name" placeholder="Username">
+			<textarea id="bio" placeholder="Add your bio"></textarea>
+			<div id= "add-image">
+				 <input id="file" typeaccept= "image/png",image/gif, image/gif,">
+			</div>
+			<button id="update-profile">Update Profile</button>
 		</div>
+		
 		<div id="profile">
 			<img src="cat.jpg" alt="">
-			<button>Edit Profile</button>
+			<button id="edit-profile">Edit Profile</button>
 		</div>
+		
 		<div id="social">
 			<ul>
 				<li>Twitter</li>
@@ -73,7 +82,9 @@
 			</ul>
 		</div>
 	</div>
-	<script src="auth.js"></script>
+	
+	<script src="js/auth.js"></script>
+	<script src="js/profile.js"></script>
 </body>
 </html>
 
