@@ -1,0 +1,39 @@
+/*complementary color scheme(blue and orange)
+  main #1786FF
+  blue accents #3094FF #085AB3
+  orange accents #
+
+
+*/
+/*  Monochromatic 
+#387A80
+#BDF9FF
+#70F3FF
+#5E7D80
+#5AC2CC
+*/
+:root{
+    --main-color:#5AC2CC;
+    --text-color:rgb(70, 88, 91);
+    --link-color:#387A80;
+    --button-color:#70F3FF;
+    --background-color:#5E7D80;
+
+}
+*{
+  color: var(--text-color);
+}
+button{
+    color:var(--text-color);
+    background-color: var(--button-color);
+}
+#menu{
+  background-color:var(--main-color) ;
+}
+
+a{
+  color:var(--link-color) ;
+}
+
+
+
