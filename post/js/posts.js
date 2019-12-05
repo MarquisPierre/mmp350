@@ -1,13 +1,13 @@
-const posts = document.getElementById('post-text');
-const postRef = firebase.database().ref('post-text');
-
+const posts = document.getElementById('posts');
+const postRef = firebase.database().ref('posts');
+console.log(postRef)
 
 function loadPosts() {
 	postRef.on('child_added', function(snapshot) {
 		createPost(snapshot.val());	   
 	});
 }
-
+console.log(createElement);
 function createElement(_class, text) {
 	const element = document.createElement('div');
 	element.classList.add(_class);

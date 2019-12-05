@@ -19,9 +19,10 @@ firebase.auth().onAuthStateChanged(function(user) {
 		document.body.classList.add('auth');
 
 		 /*find user in database*/ 
-		 const userRef = firebase.database().ref('user').child(user.uid);
+		 const userRef = firebase.database().ref('users').child(user.uid);
 		 userRef.on('value', function(snapshot){
 			const userInfo = snapshot.val();
+		console.log(userInfo)
 			displayName.textContent = 'welcome, ' + userInfo.displayName;
 		 });
 			const profileButton = document.getElementById('edit-profile');
