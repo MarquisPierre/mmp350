@@ -1,0 +1,16 @@
+
+
+:root{
+    --main-color:#5AC2CC;
+    --text-color:rgb(70, 88, 91);
+    --link-color:#387A80;
+    --button-color:#70F3FF;
+    --background-color:#5E7D80;
+    --post-color:#E1E8ED;
+}
+
+.post{
+   background-color: var(--post-color) ;
+   padding: 50px;
+   margin: 10px;
+}
