@@ -1,42 +1,19 @@
-/* analogous color scheme */
-:root {
-	--main-hue: 240;
-	--offset: 30;
+/*complementary color scheme(blue and orange)
+  main #1786FF
+  blue accents #3094FF #085AB3
+  orange accents #
 
-	--main-color: hsl(var(--main-hue), 50%, 50%);
-		
-	--accent-one-hue: calc(var(--main-hue) - var(--offset));
-	--accent-two-hue: calc(var(--main-hue) + var(--offset));
-	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
-	--accent-two: hsl(var(--accent-two-hue), 50%, 50%);
-	
-	--complement: var(--accent-two);
-	--button-dark: hsl(var(--accent-one-hue), 60%, 25%);
-	
-	--link-color: var(--main-color);
-}
-	
-	
-* {
-	color: var(--text-color);
+*/
+
+:root{
+    --main-color: #1789B3;
+    --text-color:;
+    --link-color:;
+    --button-color:;
+    --background-color:;
+
 }
 
-#title h1 {
-	color: var(--main-color);
-}
-
-#menu, #login {
-	background-color: var(--accent-one);
-}
-
-button {
-	background-color: var(--complement);
-}
-
-a {
-	color: var(--link-color);
-}
-
-#social {
-	background-color: var(--complement);
+button{
+    color:var(--main-color);
 }

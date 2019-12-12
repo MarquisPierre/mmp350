@@ -5,30 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>grid</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
 
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+	 https://firebase.google.com/docs/web/setup#config-web-app -->
 
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-		 https://firebase.google.com/docs/web/setup#config-web-app -->
-
-	<script>
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-			apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
-			authDomain: "mmp-three-fifty.firebaseapp.com",
-			databaseURL: "https://mmp-three-fifty.firebaseio.com",
-			projectId: "mmp-three-fifty",
-			storageBucket: "",
-			messagingSenderId: "29267025222",
-			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+		authDomain: "mmp-three-fifty.firebaseapp.com",
+		databaseURL: "https://mmp-three-fifty.firebaseio.com",
+		projectId: "mmp-three-fifty",
+		storageBucket: "mmp-three-fifty.appspot.com",
+		messagingSenderId: "29267025222",
+		appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
 //		firebase.analytics();
-	</script>
+</script>
 </head>
 <body>
 	<div id="container">
@@ -38,8 +38,7 @@
 		
 		<div id="menu">
 			<ul>
-				<li><a href="about">About</a></li>
-				<li><a href="profile">Profile</a></li>
+				<li><a href="index.html">About</a></li>
 				<li><a href="users">Users</a></li>
 				<li><a href="support">Support</a></li>
 			</ul>
@@ -57,19 +56,29 @@
 			<p id="user-name"></p>
 			<button id="logout-button">Logout</button>
 		</div>
-		
+	
 		<div id="main">
-			<img id = "profile-image">
-			<input id="profile-name" placeholder="Username">
-			<textarea id="bio" placeholder="Add your bio"></textarea>
-			<div id= "add-image">
-				 <input id="file" typeaccept= "image/png",image/gif, image/gif,">
-			</div>
-			<button id="update-profile">Update Profile</button>
-		</div>
-		
+		  <div>
+			  <img id="profile-image">
+			     <input id="profile-name" placeholder="Username">
+			     <textarea id="bio" placeholder="Add your bio"></textarea>
+			     <input id="profile-email" placeholder="Change Email">
+				 <input id="profile-password" placeholder="New Password" type="password">
+				 <span onclick="this.previousElementSibling.type = 'text'">show</span>
+				 <span onclick="this.previousElementSibling.previousElementSibling.type = 'password'">hide</span>
+			     <button id="update-profile">Update Profile</button>
+          </div>
+     </div>
+	 <div id="add-image">
+		<p>Upload your user profile image:</p>
+		<input id="image-file" type="file" accept="image/png, image/gif, image/jpeg">
+		<button id="submit-image">Submit Image</button>
+		<button id="update-profile">Update Profile</button>
+	</div>
+	 
+			
 		<div id="profile">
-			<img src="cat.jpg" alt="">
+			<img id="edit-profile-image" src="cat.jpg" alt="">
 			<button id="edit-profile">Edit Profile</button>
 		</div>
 		
@@ -85,6 +94,7 @@
 	
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>
+
 </body>
 </html>
 

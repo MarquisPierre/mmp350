@@ -1,5 +1,5 @@
 const postText = document.getElementById('post-text');
-const publishButton = document.getElementById('publish');
+const publishButton = document.getElementById('publish-post');
 
 publishButton.addEventListener('click', publishPost);
 postText.addEventListener('keyup', function(event) {

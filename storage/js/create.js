@@ -9,25 +9,21 @@ createButton.onclick = function() {
 	promise.catch(function(error) {
 		errorMessage.textContent = error.message;
 	});
-	
 	promise.then(function(credential) {
-		createUser(credential.user.uid);
+        console.log(credential);
+        creatUser(credential.user.uid);
+		
 	});
 };
 
-function createUser(uid) {
-	const db = firebase.database();
-	const ref = db.ref("users").child(uid);
-	const promise = ref.update({
-		displayName: userInput.value
-	});
-	
-	promise.then(function() {
-		location.href = "index.html";
-	});
+function creatUser(uid){
+    const db = firebase.database();
+    const ref = db.ref('users').child(uid);
+    const promise = ref.update({
+        displayName: userInput.value
+    })
+    
+    promise.then(function(){
+        location.href ="index.html";
+    })
 }
-
-
-
-
-
