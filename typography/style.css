@@ -1,22 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Pacifico&display=swap');
-
-
-/* global styles */
-@import "css/layout.css";
-@import "css/color.css";
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Economica&display=swap');
 @import "css/typography-1.css";
-
-/* page styles */
+@import "css/typography-2.css";
+@import "css/typography-3.css";
+@import "css/layout.css";
 @import "css/auth.css";
+
 @import "css/menu.css";
 @import "css/create.css";
+
 @import "css/profile.css";
-
+@import "css/color-1.css";
+@import "css/post.css";
 @import "css/publish.css";
-@import "css/posts.css";
-
-/* responsive */
+/* @import "css/color-2.css"; */
+/* @import "css/color-3.css"; */
 @import "css/responsive.css";
 
+
 img { width: 100%; }
-body { margin: 0; }

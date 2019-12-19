@@ -1,0 +1,47 @@
+/* 1st typographic hierarchy */
+#title{
+	font-family: 'Girassol', cursive;
+}
+
+#posts{
+	font-family: 'Ubuntu', sans-serif;
+}
+#user-info{
+	font-family: 'Ubuntu', sans-serif;
+}
+#social{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+@media(max-width: 414px){
+	#title{
+		font-family: 'Girassol', cursive;
+		font-size: 30px;
+	}
+	
+	#posts{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	#user-info{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	#social{
+		font-family: 'Ubuntu', sans-serif;
+	}
+	
+}
+@media(max-width:1024px) and (min-width:414px){
+	#title{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+}
+
+#posts{
+	font-family: 'Lilita One', cursive;
+}
+#user-info{
+	font-family: 'Lilita One', cursive;
+}
+#social{
+	font-family: 'Lilita One', cursive;
+}}

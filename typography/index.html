@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>grid</title>
@@ -9,7 +10,7 @@
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -37,8 +38,7 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="about">About</a></li>
-				<li><a href="profile">Profile</a></li>
+				<li><a href="index.html">About</a></li>
 				<li><a href="users">Users</a></li>
 				<li><a href="support">Support</a></li>
 			</ul>
@@ -57,20 +57,17 @@
 			<button id="logout-button">Logout</button>
 		</div>
 		
-		<div id="main">
-			<div id="write-post">
-				<textarea id="post-text" placeholder="Compose a new post"></textarea>
-				<button id="publish">Publish</button>
-			</div>
-			<div id="posts"></div>
+	
+		<div id="write-post">
+			<textarea id="post-text" placeholder="What's on your mind?"></textarea>
+			<button id="publish-post">Publish</button>
 		</div>
 		
+		<div id="posts"></div>
 		<div id="profile">
-			<img src="cat.jpg" alt="">
-			<button id="edit-profile">Edit Profile</button>
+			<img id="edit-profile-image"src="cat.jpg" alt="">
+			<button id= "edit-profile">Edit Profile</button>
 		</div>
-		
-		
 		<div id="social">
 			<ul>
 				<li>Twitter</li>
@@ -80,11 +77,9 @@
 			</ul>
 		</div>
 	</div>
-	
 	<script src="js/auth.js"></script>
-	<script src="js/publish.js"></script>
 	<script src="js/posts.js"></script>
-	
+	<script src="js/publish.js"></script>
 </body>
 </html>
 

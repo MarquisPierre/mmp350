@@ -1,0 +1,49 @@
+	
+#title{
+	font-family: 'Poiret One', cursive;
+}
+
+#posts{
+	font-family: 'Economica', sans-serif;
+}
+#user-info{
+	font-family: 'Economica', sans-serif;
+}
+#social{
+	font-family: 'Economica', sans-serif;
+}
+@media(max-width: 414px){
+    #title{
+        font-family: 'Poiret One', cursive;
+        font-size: 30px;
+    }
+    
+    #posts{
+        font-family: 'Economica', sans-serif;
+    }
+    #user-info{
+        font-family: 'Economica', sans-serif;
+    }
+    #social{
+        font-family: 'Economica', sans-serif;
+    }
+}
+@media(max-width:1024px) and (min-width:414px){
+
+    #title{
+        font-family: 'Poiret One', cursive;
+        font-size: 30px;
+    }
+    
+    #posts{
+        font-family: 'Economica', sans-serif;
+    }
+    #user-info{
+        font-family: 'Economica', sans-serif;
+    }
+    #social{
+        font-family: 'Economica', sans-serif;
+    }
+
+
+}
