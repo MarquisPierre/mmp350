@@ -1,0 +1,107 @@
+/*#title { background: lightgray; }*/
+/*#main { background: pink; }*/
+/*#menu { background: lightgreen; }*/
+
+/* mobile */
+@media(max-width: 414px){
+    #container{
+        width: 100%;
+        border-bottom: 1px solid black;
+        grid-template-columns: 100%;
+    }
+
+    #title, #title-create, #menu, #menu-create, #user-info, #main, #main-create, #write-post {
+        grid-column: 1 / span 1;
+    }
+
+    #menu  {
+        grid-row: 1;
+    }
+
+    #login{
+        padding-top: 10px;
+        grid-row: 2;
+    }
+    #title{
+    
+        grid-row: 3;
+    }
+    #main{
+        grid-row: 4;
+    }
+
+    input{
+        border-bottom: 1px solid black;	
+        display: block;
+        margin:0 auto;
+    }
+
+    button{
+
+        display: block;
+        margin:0 auto;
+    }
+ 
+
+ #social{
+     grid-row: 5;
+ }
+    #error-message{
+        display: block;
+        margin:0 auto;
+    }
+
+}
+@media(max-width:1024px) and (min-width:414px){
+    #container{
+        width: 100%;
+        border-bottom: 1px solid black;
+        grid-template-columns: 1fr 1fr;
+    }
+
+  
+
+    #menu  {
+        grid-row: 2;
+        grid-column:1;
+        
+    }
+
+    #login{
+        padding-top: 10px;
+        grid-column:2;
+        grid-row:3;
+    }
+    #title{
+        grid-column:2;
+        grid-row: 1;
+    }
+    #main{
+        grid-row: 4;
+    }
+
+    input{
+        border-bottom: 1px solid black;	
+        display: block;
+        margin:0 auto;
+    }
+    #profile{
+        grid-column:1;
+        grid-row:4;
+    }
+    #social{
+        grid-column:1;
+        grid-row:5;
+    }
+    button{
+
+        display: block;
+        margin:0 auto;
+    }
+
+    #error-message{
+        display: block;
+        margin:0 auto;
+    }
+
+}
